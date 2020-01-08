@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.baizhi.lzz.dao.CounterDao">
+    <select id="selectId" resultType="Counter">
+        select id,title,count,create_date,user_id ,course_id from counter where user_id=#{uid} and course_id=#{id}
+    </select>
+</mapper>
