@@ -5,6 +5,7 @@ import com.baizhi.lzz.entity.*;
 import com.baizhi.lzz.service.AlbumService;
 import com.baizhi.lzz.service.ArticleService;
 import com.baizhi.lzz.service.CourseService;
+import io.goeasy.GoEasy;
 import org.apache.ibatis.session.RowBounds;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -77,5 +78,11 @@ public class CmfzApplicationTests {
         System.out.println(select);
 
 
+    }
+
+    @Test
+    public void test11() {
+        GoEasy goEasy = new GoEasy( "http://rest-hangzhou.goeasy.io", "BC-47e47f95448848df966df1209ab41af7");
+        goEasy.publish("cmfz", "你可去你妈的把！！");
     }
 }

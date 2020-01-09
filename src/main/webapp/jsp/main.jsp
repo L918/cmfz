@@ -16,6 +16,7 @@
     <script src="../boot/js/ajaxfileupload.js"></script>
     <script src="../kindeditor/kindeditor-all-min.js"></script>
     <script src="../kindeditor/lang/zh-CN.js"></script>
+    <script type="text/javascript" src="http://cdn.goeasy.io/goeasy-1.0.3.js"></script>
     <script type="text/javascript">
         // KindEditor初始化时必须放在head标签中,不然会出现无法初始化的情况
         KindEditor.ready(function (K) {
@@ -141,6 +142,23 @@
                         <div class="panel-body">
                             <ul class="nav">
                                 <li><a href="javascript:$('#centerLay').load('./banner.jsp')">轮播图管理</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-yellows">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion"
+                               href="#collapseSix">
+                                聊天模块
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseSix" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <ul class="nav">
+                                <li><a href="javascript:$('#centerLay').load('./goeasy.jsp')">六组聊天管理</a></li>
                             </ul>
                         </div>
                     </div>
